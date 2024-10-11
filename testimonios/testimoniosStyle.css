@@ -1,0 +1,148 @@
+body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display:flex;
+
+}
+
+header {
+    background: gray;
+    color: aliceblue;
+    padding: 20px;
+    height: 150px;
+    text-align: center;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.section-titulo {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+#testimonios{
+    flex: 1;
+}
+
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.testimonio-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonio-item:hover {
+    transform: translateY(-10px);
+}
+
+.testimonio-texto {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testimonio-autor {
+    font-weight: bold;
+    color: #333;
+}
+
+.testimonio-fecha {
+    font-size: 0.8em;
+    color: #777;
+}
+
+.boton-like {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #888;
+}
+.img-ajustada{
+    width: 200;
+    height: 150;
+    object-fit: cover;
+}
+
+
+#testimonio-container{
+    padding: 50px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 5px;
+    
+    
+}
+.testimonio{
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+
+.boton-like:hover {
+    color: #007bff;
+}
+
+.like-total {
+    margin-left: 8px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+
+footer {
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+
+}
